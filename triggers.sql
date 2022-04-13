@@ -107,7 +107,7 @@ FROM OWNER O JOIN BOAT B ON O.OWNERID = B.OWNERID
 SELECT * FROM VIEW1
 ORDER BY OWNERID
 
-																	---------------------------------------------
+																
 -- TASK 2
 CREATE VIEW [VIEW3]
 AS
@@ -116,7 +116,7 @@ FROM SAILOR S JOIN RESERVATION R ON S.SailorID = R.SAILORID JOIN BOAT B ON R.BOA
 
 -- DISPLAY RESULT ON SCREEN
 SELECT * FROM VIEW3
-																	---------------------------------------------
+																	
 
 -- TASK 3
 CREATE PROCEDURE PROCA
@@ -127,7 +127,7 @@ GROUP BY OWNERNAME
 
 -- EXECUTE THE VIEW
 EXECUTE PROCA
-																   ---------------------------------------------	
+																   	
 -- TASK 4
 CREATE VIEW insertion
 AS
@@ -139,8 +139,7 @@ CREATE VIEW insertionintoboat
 AS 
 SELECT * FROM BOAT with check option
 INSERT INTO insertion values(10,'Hammad','145-145-145','Islamabad','Pakistan');
-
-																	---------------------------------------------
+																
 -- Task 5
 CREATE TRIGGER TRIG1
 ON BOAT
@@ -156,7 +155,7 @@ on BOAT;
 
 Insert into BOAT(BoatName, BoatType, Price, OwnerID) VALUES ('Kevin Nash','Fishing1',540000, 2)
 
-																	----------------------------------------------
+																	
 -- Task 6
 CREATE TRIGGER TRIG2 
 on OWNER
